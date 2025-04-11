@@ -1,6 +1,14 @@
-import React from "react";
+import { router } from "expo-router";
+import React, { useState } from "react";
 import { ImageBackground, Text, View } from "react-native";
 function HomeScreen() {
+  const [timing, setTiming] = useState(false);
+  setTimeout(() => {
+    setTiming(true);
+  }, 3000);
+  if (timing) {
+    router.push("/home/home");
+  }
   return (
     <>
       <ImageBackground
@@ -10,7 +18,17 @@ function HomeScreen() {
       >
         <View className={"absolute inset-0 bg-black/50"} />
         <View className=" h-full flex-1  justify-center items-center">
-          <Text className="text-white text-5xl pt-[400px]">Home Screen</Text>
+          <Text className="text-white text-5xl uppercase font-extrabold pt-[300px]">
+            Welcome To{" "}
+          </Text>
+          <Text className="text-black border-2 border-white/20 text-3xl mt-5 px-6 py-4 rounded-full font-semibold bg-white/70">
+            SignLang <Text className="uppercase font-bold">AI</Text>{" "}
+          </Text>
+        </View>
+        <View>
+          <Text className="text-white text-2xl text-center">
+            {!timing ? "Loading..." : ""}
+          </Text>
         </View>
       </ImageBackground>
     </>
