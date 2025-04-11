@@ -32,6 +32,7 @@
         "react-native-webview": "13.12.5",
         "tailwindcss": "3.4.17",
         "tamagui": "^1.125.34",
+        "twrnc": "^4.6.1",
       },
       "devDependencies": {
         "@babel/core": "^7.25.2",
@@ -1977,6 +1978,8 @@
     "ts-interface-checker": ["ts-interface-checker@0.1.13", "", {}, "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA=="],
 
     "tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
+
+    "twrnc": ["twrnc@4.6.1", "", { "dependencies": { "tailwindcss": ">=2.0.0 <4.0.0" }, "peerDependencies": { "react-native": ">=0.62.2" } }, "sha512-6dlsdlW3faKNg0sFJWHb+OcLP5GzDLOqKDEQowrwe6Qb8XrLuwTkpsPGp20hRSL8tnOFDdpDMDCw+o/OO88u5w=="],
 
     "type-detect": ["type-detect@4.0.8", "", {}, "sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g=="],
 
