@@ -3,13 +3,14 @@ import { Text, View } from "react-native";
 
 export default function Home() {
   return (
-    <View className="flex-1 bg-white relative">
-      <View className="flex-1 items-center justify-center">
-        <Text className="text-3xl text-red-400">Welcome to Login Page</Text>
-        <Link href="/">
-          <Text className="text-xl text-blue-600 mt-5">Go To Home Page</Text>
-        </Link>
-      </View>
+    <View className="flex-1 px-5">
+      <Text className="text-3xl font-bold">Home Screen</Text>
+      <Link href="/about/about" className="mt-5">
+        <Text className="text-blue-600 text-lg">Go to About</Text>
+      </Link>
+      <Link href="/" className="mt-5">
+        <Text className="text-blue-600 text-lg">Go To Splash Screen</Text>
+      </Link>
     </View>
   );
 }

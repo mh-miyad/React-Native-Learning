@@ -2,7 +2,11 @@ import "@/global.css";
 import { Slot } from "expo-router";
 import React from "react";
 function Layout() {
-  return <Slot />;
+  return (
+    <>
+      <Slot />
+    </>
+  );
 }
 
 export default Layout;
